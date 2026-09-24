@@ -42,6 +42,10 @@ If you reference this work, please cite the Zenodo DOI:
 
 **Solan, R. (2026). EfficientML-Cloud: Hybrid Cost-Aware Inference for Enterprise ML Systems. Zenodo. DOI: 10.5281/zenodo.22903195**
 
+
+**Solan, R. (2026). LLMOps + Enterprise MLOps Modernization. Zenodo. https://doi.org/10.5281/zenodo.22944226**
+
+
 BibTeX:
 
 ```bibtex
