@@ -1,0 +1,20 @@
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}[
+    node distance=1.2cm,
+    box/.style={rectangle, draw, rounded corners, minimum width=4cm, minimum height=1cm, align=center}
+]
+
+% Layers
+\node[box] (data) {Layer 1: Data \& Embedding Store\\Feature Store, Vector DB, Retrieval Pipelines};
+\node[box, below=of data] (train) {Layer 2: Training \& Fine-Tuning\\LoRA/QLoRA, Synthetic Data, Experiment Tracking};
+\node[box, below=of train] (manage) {Layer 3: Model \& Prompt Management\\Registries, Prompt Templates, RAG Configurations};
+\node[box, below=of manage] (deploy) {Layer 4: Deployment\\Hybrid Cloud/On-Prem Routing, Distillation, Canary/Shadow};
+\node[box, below=of deploy] (monitor) {Layer 5: Monitoring \& Governance\\Hallucination Scoring, Drift Detection, Audit Trails};
+
+% Governance shell
+\node[draw, dashed, rounded corners, fit=(data)(train)(manage)(deploy)(monitor), label=above:{\textbf{Governance Shell}}] {};
+
+\end{tikzpicture}
+\caption{Unified MLOps + LLMOps Modernization Architecture}
+\end{figure}
